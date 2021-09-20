@@ -5,11 +5,11 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+    @user = User.find(params[:username])
     render json: @user
   end
 
-  def create
+  def createcd
   end
 
   def update
